@@ -1,6 +1,6 @@
-public class OOPS{
-    public static void main(String args[]){
-        Pen p1 = new Pen(); //created a pen object 
+public class OOPS {
+    public static void main(String args[]) {
+        Pen p1 = new Pen(); // created a pen object
         p1.setColor("Blue");
         System.out.println(p1.color);
 
@@ -9,28 +9,42 @@ public class OOPS{
 
         p1.setColor("yellow");
         System.out.println(p1.color);
+
+        BankAccount myAcc = new BankAccount();
+        myAcc.username = "Nishan Kumar Rai";
+        myAcc.setPassword("kalimaya");
     }
 }
 
-class Pen{
-    //properties 
+class BankAccount {
+    public String username;
+    private String password;
+
+    public void setPassword(String pwd) {
+        password = pwd;
+    }
+}
+
+class Pen {
+    // properties
     String color;
     int tip;
 
-    void setColor(String newColor){
+    void setColor(String newColor) {
         color = newColor;
     }
 
-    void setTip(int newTip){
+    void setTip(int newTip) {
         tip = newTip;
     }
 }
+
 class Student {
     String name;
     int age;
     float percentage;
 
-    void calPercentage(int phy, int chem, int math){
-        percentage = (phy + chem + math)/3;
+    void calPercentage(int phy, int chem, int math) {
+        percentage = (phy + chem + math) / 3;
     }
 }
