@@ -4,7 +4,7 @@ public class First_Occurence {
             return -1;
         }
         if(arr[i]==key){
-            return 1;
+            return i;
         }
         return fistOccurence(arr, key, i+1);
     }
